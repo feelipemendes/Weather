@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wheater.Server", "Wheater.Server\Wheater.Server.csproj", "{3140918A-2BE4-4042-89EB-C5BA324CC321}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "wheater.client", "wheater.client\wheater.client.esproj", "{93CA1606-D639-428C-A5E8-AE45F4E63969}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3140918A-2BE4-4042-89EB-C5BA324CC321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3140918A-2BE4-4042-89EB-C5BA324CC321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3140918A-2BE4-4042-89EB-C5BA324CC321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3140918A-2BE4-4042-89EB-C5BA324CC321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CA1606-D639-428C-A5E8-AE45F4E63969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CA1606-D639-428C-A5E8-AE45F4E63969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CA1606-D639-428C-A5E8-AE45F4E63969}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{93CA1606-D639-428C-A5E8-AE45F4E63969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CA1606-D639-428C-A5E8-AE45F4E63969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CA1606-D639-428C-A5E8-AE45F4E63969}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3ADBFB10-85EC-4B02-AA83-7EAF8A108E7E}
+	EndGlobalSection
+EndGlobal
