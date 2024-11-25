@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wheater.Server", "Wheater.Server\Wheater.Server.csproj", "{3140918A-2BE4-4042-89EB-C5BA324CC321}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather.Server", "Wheater.Server\Weather.Server.csproj", "{3140918A-2BE4-4042-89EB-C5BA324CC321}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "wheater.client", "wheater.client\wheater.client.esproj", "{93CA1606-D639-428C-A5E8-AE45F4E63969}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "weather.client", "wheater.client\weather.client.esproj", "{93CA1606-D639-428C-A5E8-AE45F4E63969}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
