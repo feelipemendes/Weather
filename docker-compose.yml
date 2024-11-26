@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    ports:
+      - "1433:1433" 
+    environment:
+      - SA_PASSWORD=YourStrongPassword123!
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Developer
+      - DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
+    volumes:
+      - sqlserver_data:/var/opt/mssql  
+
+volumes:
+  sqlserver_data:  # Nome do volume persistente

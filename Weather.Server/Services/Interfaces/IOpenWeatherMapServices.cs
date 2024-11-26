@@ -4,7 +4,7 @@ namespace Weather.Server.Services.Interfaces
 {
 	public interface IOpenWeatherMapServices
 	{
-		Task<List<CoordinatesByLocationNameResponseDto?>> GetCoordinatesByLocationName(CoordinatesByLocationNameRequestDto coordinates);
-		Task<CurrentWeatherResponseDto?> CallCurrentWeatherData(CurrentWeatherRequestDto weather);
+		Task<List<CoordinatesByLocationNameResponseDto?>> GetCoordinatesByLocationName(CoordinatesByLocationNameDto coordinates);
+		Task<CurrentWeatherResponseDto?> CallCurrentWeatherData(CurrentWeatherDto weather);
 	}
 }

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 using Weather.Server.Data;
 using Weather.Server.Services;
 using Weather.Server.Services.Interfaces;
@@ -25,6 +26,9 @@ builder.Services.Configure<OpenWeatherMapSettings>(
 
 builder.Services.AddHttpClient<IOpenWeatherMapServices, OpenWeatherMapService>();
 
+var cultureInfo = new CultureInfo("en-US");
+CultureInfo.CurrentCulture = cultureInfo;
+CultureInfo.CurrentUICulture = cultureInfo;
 
 var app = builder.Build();
 

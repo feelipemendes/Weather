@@ -24,7 +24,7 @@ namespace Weather.Server.Services
 			_logger = logger;
 		}
 
-		public async Task<List<CoordinatesByLocationNameResponseDto?>> GetCoordinatesByLocationName(CoordinatesByLocationNameRequestDto dto)
+		public async Task<List<CoordinatesByLocationNameResponseDto?>> GetCoordinatesByLocationName(CoordinatesByLocationNameDto dto)
 		{
 			var validator = new CoordinatesByLocationNameRequestDtoValidator();
 			var validation = validator.Validate(dto);
@@ -67,7 +67,7 @@ namespace Weather.Server.Services
 			return null;
 		}
 
-		public async Task<CurrentWeatherResponseDto?> CallCurrentWeatherData(CurrentWeatherRequestDto weatherCoordinates)
+		public async Task<CurrentWeatherResponseDto?> CallCurrentWeatherData(CurrentWeatherDto weatherCoordinates)
 		{
 			var validator = new CurrentWeatherRequestDtoValidator();
 			var validation = validator.Validate(weatherCoordinates);

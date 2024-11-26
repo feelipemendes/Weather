@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Weather.Server.Dtos.OpenWeatherMap;
+using Weather.Server.Entities;
 using Weather.Server.Services.Interfaces;
 
 namespace Weather.Server.Controllers
@@ -20,7 +21,7 @@ namespace Weather.Server.Controllers
 		}
 
 		[HttpGet("coordinates", Name = "GetCoordinatesByLocationName")]
-		public async Task<IActionResult> GetCoordinatesByLocationName([FromQuery] CoordinatesByLocationNameRequestDto dto)
+		public async Task<IActionResult> GetCoordinatesByLocationName([FromQuery] CoordinatesByLocationNameDto dto)
 		{
 
 			try
@@ -45,7 +46,7 @@ namespace Weather.Server.Controllers
 		}
 
 		[HttpGet("weather", Name = "GetCurrentWeatherByCoordinates")]
-		public async Task<IActionResult> GetCurrentWeatherByCoordinates([FromQuery] CurrentWeatherRequestDto dto)
+		public async Task<IActionResult> GetCurrentWeatherByCoordinates([FromQuery] CurrentWeatherDto dto)
 		{
 			try
 			{
@@ -67,5 +68,12 @@ namespace Weather.Server.Controllers
 			}
 
 		}
+
+		//[HttpPost("locationbookmark", Name = "SaveLocationBookmark")]
+		//public async Task<IActionResult> SaveLocationBookmark([FromBody] LocationBookmarkDto dto)
+		//{
+
+		//}
+
 	}
 }

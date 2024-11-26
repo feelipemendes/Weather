@@ -3,7 +3,7 @@ using Weather.Server.Dtos.OpenWeatherMap;
 
 namespace Weather.Server.Validations.OpenWeatherMap
 {
-    public class CoordinatesByLocationNameRequestDtoValidator : AbstractValidator<CoordinatesByLocationNameRequestDto>
+    public class CoordinatesByLocationNameRequestDtoValidator : AbstractValidator<CoordinatesByLocationNameDto>
     {
         public CoordinatesByLocationNameRequestDtoValidator()
         {

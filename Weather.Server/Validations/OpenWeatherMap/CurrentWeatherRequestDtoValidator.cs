@@ -3,7 +3,7 @@ using Weather.Server.Dtos.OpenWeatherMap;
 
 namespace Weather.Server.Validations.OpenWeatherMap
 {
-	public class CurrentWeatherRequestDtoValidator : AbstractValidator<CurrentWeatherRequestDto>
+	public class CurrentWeatherRequestDtoValidator : AbstractValidator<CurrentWeatherDto>
 	{
         public CurrentWeatherRequestDtoValidator()
         {

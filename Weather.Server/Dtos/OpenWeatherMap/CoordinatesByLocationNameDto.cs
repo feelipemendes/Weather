@@ -1,6 +1,6 @@
 ﻿namespace Weather.Server.Dtos.OpenWeatherMap
 {
-	public class CoordinatesByLocationNameRequestDto
+	public class CoordinatesByLocationNameDto
 	{
         public string LocationName { get; set; }
     }
