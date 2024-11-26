@@ -53,7 +53,7 @@ namespace Weather.Server.Data
 		{
 			if (!optionsBuilder.IsConfigured)
 			{
-				var connectionString = Configuration["ConnectionStrings:DefaultConnection"]; // Get the connection string from your configuration
+				var connectionString = Configuration["ConnectionStrings:DefaultConnection"]; 
 				optionsBuilder.UseSqlServer(connectionString);
 			}
 		}
