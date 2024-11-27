@@ -9,6 +9,18 @@ using Weather.Server.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// CORS
+builder.Services.AddCors(options =>
+{
+	options.AddPolicy("AllowAll", policy =>
+	{
+		policy.AllowAnyOrigin()
+			  .AllowAnyHeader()
+			  .AllowAnyMethod();
+	});
+});
+
+
 // Add services to the container.
 
 builder.Logging.ClearProviders();
@@ -35,6 +47,10 @@ CultureInfo.CurrentCulture = cultureInfo;
 CultureInfo.CurrentUICulture = cultureInfo;
 
 var app = builder.Build();
+
+
+// Aplicar a política "AllowAll"
+app.UseCors("AllowAll");
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
